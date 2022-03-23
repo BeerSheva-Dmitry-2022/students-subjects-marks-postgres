@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: ${POSTGRES_PASSWORD}
+    #url: jdbc:postgresql://localhost:5432/students
+    url: postgres://ayjsbxqdtzdjmp:fa21444fd6ecea7381303f8587a79132dc5c281bf1358ffc24fafdeb2c5af4da@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d33n58bc5qrqlo
+    username: ayjsbxqdtzdjmp
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+app:
+  generation:
+    create: true
