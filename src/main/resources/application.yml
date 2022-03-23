@@ -13,4 +13,4 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQL9Dialect
 app:
   generation:
-    create: true
+    create: false
