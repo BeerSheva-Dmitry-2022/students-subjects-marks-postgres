@@ -1,10 +1,12 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    password: ${POSTGRES_PASSWORD}
-    #url: jdbc:postgresql://localhost:5432/students
-    url: jdbc:postgresql://ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d33n58bc5qrqlo
-    username: ayjsbxqdtzdjmp
+    url: jdbc:postgresql://localhost:5432/students
+    #url: jdbc:postgresql://ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d33n58bc5qrqlo
+    #username: ayjsbxqdtzdjmp
+    #password: fa21444fd6ecea7381303f8587a79132dc5c281bf1358ffc24fafdeb2c5af4da
+    username: postgres
+    password: 12345.com
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,3 +16,6 @@ spring:
 app:
   generation:
     create: false
+
+server:
+  port: 8081

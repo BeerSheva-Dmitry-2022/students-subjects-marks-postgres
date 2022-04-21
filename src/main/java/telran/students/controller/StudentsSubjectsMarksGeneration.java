@@ -22,7 +22,7 @@ public class StudentsSubjectsMarksGeneration {
 	static Logger LOG = LoggerFactory.getLogger("generation");
 	@Value("${app.generation.amount:100}")
 	int nMarks;
-	@Value("${app.generation.create:false}")
+	@Value("${app.generation.create:true}")
 	boolean needCreateDB;
 	@Autowired
 	StudentsService studentsService;
